@@ -1,6 +1,8 @@
 import os
 from pathlib import Path
 
+from django.conf.global_settings import LOGIN_REDIRECT_URL, LOGIN_URL
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -118,7 +120,17 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = "static/"
-
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
+MEDIA_URL = 'media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
+
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
+
+LOGIN_REDIRECT_URL = "account:dashboard"
+LOGIN_URL = "account:login"
+LOGOUT_URL = "account:logout"
+
+# AUTH_USER_MODEL = get_user_model()
