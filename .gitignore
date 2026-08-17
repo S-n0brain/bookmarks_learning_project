@@ -9,6 +9,8 @@ wheels/
 # Virtual environments
 .venv
 
+.env
+
 .pylintrc
 db.sqlite3
 # Django stuff:
