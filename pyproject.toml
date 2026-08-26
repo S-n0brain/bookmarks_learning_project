@@ -9,9 +9,12 @@ dependencies = [
     "django-environ>=0.14.0",
     "django-extensions>=4.1",
     "django-taggit>=6.1.0",
+    "easy-thumbnails>=2.10.1",
     "httpx>=0.28.1",
     "pillow>=12.3.0",
     "psycopg[binary]>=3.3.4",
+    "pyopenssl>=26.4.0",
+    "pytils>=0.4.4",
     "requests>=2.34.2",
     "social-auth-app-django>=6.0.1",
 ]

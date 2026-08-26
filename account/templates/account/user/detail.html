@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% load thumbnail %}
+{% block title %}
+  {{ user.get_full_name }}
+{% endblock %}
+{% block content %}
+  <h1>{{ user.get_full_name }}</h1>
+  <div class="profile-info">
+    <img src="{% thumbnail user.profile.photo 'user_previw' %}" class="user-detail" />
+  </div>
+  {% with total_followers=user.followers.count %}
+    <span class="count">
+      <span class="total">{{ total_followers }}</span>
+      follower{{ total_followers|pluralize }}
+    </span>
+    <a href="#" data-id="{{ user.id }}" data-action="{% if request.user in user.followers.all %}un{% endif %}follow" class="follow button">
+      {% if request.user not in user.followers.all %}
+        Follow
+      {% else %}
+        Unfollow
+      {% endif %}
+    </a>
+    <div id="image-list" class="image-container">
+      {% include 'images/image/list_images.html' with images=user.images_created.all %}
+    </div>
+  {% endwith %}
+{% endblock %}
+{% block domready %}
+  <script>
+    const url = '{% url "account:user_follow" %}'
+    const options = {
+      method: 'POST',
+      headers: { 'X-CSRFToken': csrftoken },
+      mode: 'same-origin'
+    }
+    
+    document.querySelector('a.follow').addEventListener('click', function (e) {
+      e.preventDefault()
+      const followButton = this
+    
+      // add request body
+      const formData = new FormData()
+      formData.append('id', followButton.dataset.id)
+      formData.append('action', followButton.dataset.action)
+      options['body'] = formData
+    
+      // send HTTP request
+      fetch(url, options)
+        .then((response) => response.json())
+        .then((data) => {
+          if (data['status'] === 'ok') {
+            const previousAction = followButton.dataset.action
+    
+            // toggle button text and data-action
+            const action = previousAction === 'follow' ? 'unfollow' : 'follow'
+            followButton.dataset.action = action
+            followButton.innerHTML = action
+    
+            // update follower count
+            const followerCount = document.querySelector('span.count .total')
+            const totalFollowers = parseInt(followerCount.innerHTML)
+            followerCount.innerHTML = previousAction === 'follow' ? totalFollowers + 1 : totalFollowers - 1
+    
+            // Отрисовываем сообщения из Django
+            console.log(data)
+            if (data.messages && data.messages.length > 0) {
+              let messagesContainer = document.getElementById('messages-list')
+              // Если контейнера еще нет на странице, создаем его
+              if (!messagesContainer) {
+                messagesContainer = document.createElement('ul')
+                messagesContainer.id = 'messages-list'
+                messagesContainer.className = 'messages'
+                
+                document.querySelector('#django-messages').prepend(messagesContainer)
+              }
+              data.messages.forEach((msg) => {
+                const li = document.createElement('li')
+                li.className = msg.tags
+                li.textContent = msg.message
+                messagesContainer.appendChild(li)
+                setTimeout(() => {
+                  li.remove()
+                }, 2000)
+              })
+            }
+          }
+        })
+    })
+  </script>
+{% endblock %}

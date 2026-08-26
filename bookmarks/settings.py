@@ -2,6 +2,7 @@ import os
 from pathlib import Path
 
 import environ
+from django.urls import reverse_lazy
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -40,6 +41,8 @@ INSTALLED_APPS = [
     "django.contrib.postgres",
     "social_django",
     "images",
+    "easy_thumbnails",
+    "actions",
 ]
 
 MIDDLEWARE = [
@@ -164,3 +167,35 @@ SOCIAL_AUTH_PIPELINE = (
 SOCIAL_AUTH_URL_NAMESPACE = "social"
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = env("SOCIAL_AUTH_GOOGLE_OAUTH2_KEY")
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = env("SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET")
+
+
+if DEBUG:
+    import mimetypes
+
+    mimetypes.add_type("application/javascript", ".js", True)
+    mimetypes.add_type("text/css", ".css", True)
+
+THUMBNAIL_DEBUG = DEBUG
+THUMBNAIL_DEFAULT_IMAGE = "images/no-image.jpg"
+
+THUMBNAIL_ALIASES = {
+    "images.Image": {  # '' — project-wide
+        "avatar_preview": {
+            "size": (300, 0),
+            "crop": "smart",
+            "sharpen": True,
+            "quality": 90,
+        },
+    },
+    "account.Profile": {
+        "user_previw": {
+            "size": (100, 100),
+            "sharpen": True,
+            "quality": 100,
+        }
+    },
+}
+
+ABSOLUTE_URL_OVERRIDES = {
+    "auth.user": lambda u: reverse_lazy("account:user_detail", args=[u.username])
+}

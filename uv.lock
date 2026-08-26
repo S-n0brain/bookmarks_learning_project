@@ -41,9 +41,12 @@ dependencies = [
     { name = "django-environ" },
     { name = "django-extensions" },
     { name = "django-taggit" },
+    { name = "easy-thumbnails" },
     { name = "httpx" },
     { name = "pillow" },
     { name = "psycopg", extra = ["binary"] },
+    { name = "pyopenssl" },
+    { name = "pytils" },
     { name = "requests" },
     { name = "social-auth-app-django" },
 ]
@@ -61,9 +64,12 @@ requires-dist = [
     { name = "django-environ", specifier = ">=0.14.0" },
     { name = "django-extensions", specifier = ">=4.1" },
     { name = "django-taggit", specifier = ">=6.1.0" },
+    { name = "easy-thumbnails", specifier = ">=2.10.1" },
     { name = "httpx", specifier = ">=0.28.1" },
     { name = "pillow", specifier = ">=12.3.0" },
     { name = "psycopg", extras = ["binary"], specifier = ">=3.3.4" },
+    { name = "pyopenssl", specifier = ">=26.4.0" },
+    { name = "pytils", specifier = ">=0.4.4" },
     { name = "requests", specifier = ">=2.34.2" },
     { name = "social-auth-app-django", specifier = ">=6.0.1" },
 ]
@@ -398,6 +404,19 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/34/a6/f1beaf8f552fe90c153cc039316ebab942c23dfbc88588dde081fefca816/django_taggit-6.1.0.tar.gz", hash = "sha256:c4d1199e6df34125dd36db5eb0efe545b254dec3980ce5dd80e6bab3e78757c3", size = 38151, upload-time = "2024-09-29T08:07:39.477Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/6b/34/4185c345530b91d05cb82e05d07148f481a5eb5dc2ac44e092b3daa6f206/django_taggit-6.1.0-py3-none-any.whl", hash = "sha256:ab776264bbc76cb3d7e49e1bf9054962457831bd21c3a42db9138b41956e4cf0", size = 75749, upload-time = "2024-09-29T08:07:14.612Z" },
+]
+
+[[package]]
+name = "easy-thumbnails"
+version = "2.10.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "django" },
+    { name = "pillow" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/04/2f/71f17c3ce65b25dd8fc8e513738c8496eadbd8bab94f39509a511ff99704/easy_thumbnails-2.10.1.tar.gz", hash = "sha256:a50aa5f99387546c35ab5ba1ea9b3cbbc5658e65601cd34949f62137c32c222e", size = 81446, upload-time = "2025-08-17T20:49:11.308Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b0/90/be137d0592501ec08d4a00c8430121e95dfe6c8114a1d4436b5cdd6b9803/easy_thumbnails-2.10.1-py3-none-any.whl", hash = "sha256:24462d63dd31543ef1585538b2bfefe0db96d3409bb431c70b81548fb2cfc5be", size = 79695, upload-time = "2025-08-17T20:49:09.119Z" },
 ]
 
 [[package]]
@@ -793,6 +812,18 @@ crypto = [
 ]
 
 [[package]]
+name = "pyopenssl"
+version = "26.4.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "cryptography" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/3f/e8/7325d258199b159eb2c03fe32107533e2832e70e63f4fb88a6aa00023201/pyopenssl-26.4.0.tar.gz", hash = "sha256:28dfcce0162b9211413e26dfbfdf1d24317fbeba18fc93c12400a1856b2a0bc7", size = 182046, upload-time = "2026-08-01T19:50:50.512Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/51/ad/2cf6d3fa2fae5c79e1ed9960c0d42badd0f94d81dd12b50604cdc839e648/pyopenssl-26.4.0-py3-none-any.whl", hash = "sha256:f0eb0cb2d581d3ad2b9c489468485e7f2ab6727d08401bcf9d824c3caddf3c1c", size = 56026, upload-time = "2026-08-01T19:50:48.94Z" },
+]
+
+[[package]]
 name = "python3-openid"
 version = "3.2.0"
 source = { registry = "https://pypi.org/simple" }
@@ -802,6 +833,15 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/5f/4a/29feb8da6c44f77007dcd29518fea73a3d5653ee02a587ae1f17f1f5ddb5/python3-openid-3.2.0.tar.gz", hash = "sha256:33fbf6928f401e0b790151ed2b5290b02545e8775f982485205a066f874aaeaf", size = 305600, upload-time = "2020-06-29T12:15:49.026Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/e0/a5/c6ba13860bdf5525f1ab01e01cc667578d6f1efc8a1dba355700fb04c29b/python3_openid-3.2.0-py3-none-any.whl", hash = "sha256:6626f771e0417486701e0b4daff762e7212e820ca5b29fcc0d05f6f8736dfa6b", size = 133681, upload-time = "2020-06-29T12:15:47.502Z" },
+]
+
+[[package]]
+name = "pytils"
+version = "0.4.4"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/28/c8/e9b179c624ed0ed6f3c0c61ca47556e90e2a484021362bcf1d0dded233b6/pytils-0.4.4.tar.gz", hash = "sha256:9992a96caad57daa211584df1da4fd825f11e836d3ed93011785f1d02ab6f0ca", size = 109208, upload-time = "2025-07-29T07:17:37.92Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/fc/9e/e60c212698a34aa5c694824bc8963dce70bf38894cbede38c06d78471d1a/pytils-0.4.4-py3-none-any.whl", hash = "sha256:e54c16465a5fdb65d414e2da8045e6cc6de79889acda6143dcef2e1e86a1a840", size = 34194, upload-time = "2025-07-29T07:17:36.227Z" },
 ]
 
 [[package]]

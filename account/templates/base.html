@@ -17,10 +17,10 @@
                 <a href="{% url "account:dashboard" %}">My dashboard</a>
             </li>
             <li {% if section == "images" %}class="selected"{% endif %}>
-                <a href="#">Images</a>
+                <a href="{% url "images:list" %}">Images</a>
             </li>
             <li {% if section == "people" %}class="selected"{% endif %}>
-                <a href="#">People</a>
+                <a href="{% url "account:user_list" %}">People</a>
             </li>
         </ul>
         {% endif %}
@@ -36,19 +36,29 @@
         {% endif %}
         </span>
     </div>
-    {% if messages %}
-      <ul class="messages">
-        {% for message in messages %}
-          <li class="{{ message.tags }}">
-            {{ message|safe }}
-            <a href="#" class="close">x</a>
-          </li>
-        {% endfor %}
+    <div id="django-messages">
+      <ul class="messages" id="messages-list">
+        {% if messages %}
+          {% for message in messages %}
+            <li class="{{ message.tags }}">
+              {{ message|safe }}
+              <a href="#" class="close">x</a>
+            </li>
+          {% endfor %}
+        {% endif %}
       </ul>
-    {% endif %}
+    </div>
     <div id="content">
       {% block content %}
       {% endblock %}
     </div>
+    <script src="//cdn.jsdelivr.net/npm/js-cookie@3.0.8/dist/js.cookie.min.js"></script>
+    <script>
+      const csrftoken = Cookies.get("csrftoken");
+      document.addEventListener("DOMContentLoaded", (event) => {
+      })
+    </script>
+    {% block domready %}
+    {% endblock domready %}
   </body>
 </html>
