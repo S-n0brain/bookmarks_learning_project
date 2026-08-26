@@ -1,12 +1,13 @@
+from django.contrib import messages
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import AbstractUser, User
-from django.contrib import messages
-from django.http import HttpRequest, HttpResponse
-from django.shortcuts import redirect, render
+from django.http import HttpRequest, HttpResponse, JsonResponse
+from django.shortcuts import get_object_or_404, render
+from django.views.decorators.http import require_POST
 
-from account.forms import LoginForm, UserRegistrationForm, UserEditForm, ProfileEditForm
-from account.models import Profile
+from account.forms import LoginForm, ProfileEditForm, UserEditForm, UserRegistrationForm
+from account.models import Contact, Profile
 
 
 def user_login(request: HttpRequest):
@@ -74,3 +75,47 @@ def edit(request: HttpRequest):
         "account/edit.html",
         {"user_form": user_form, "profile_form": profile_form},
     )
+
+
+@login_required
+def user_list(request: HttpRequest):
+    users = User.objects.filter(is_active=True)
+    return render(
+        request, "account/user/list.html", {"section": "people", "users": users}
+    )
+
+
+@login_required
+def user_detail(request: HttpRequest, username: str):
+    user = get_object_or_404(User, username=username, is_active=True)
+    return render(
+        request, "account/user/detail.html", {"section": "people", "user": user}
+    )
+
+
+@require_POST
+@login_required
+def user_follow(request: HttpRequest):
+    user_id = request.POST.get("id")
+    action = request.POST.get("action")
+    if user_id and action:
+        try:
+            user = User.objects.get(id=user_id)
+            if action == "follow":
+                Contact.objects.get_or_create(user_from=request.user, user_to=user)
+                messages.success(request, f"You are now following {user.username}!")
+            else:
+                Contact.objects.filter(user_from=request.user, user_to=user).delete()
+                messages.success(request, f"You have unfollowed {user.username}.")
+            django_messages = []
+            for msg in messages.get_messages(request=request):
+                django_messages.append(
+                    {
+                        "message": msg.message,
+                        "tags": msg.tags,
+                    }
+                )
+            return JsonResponse(data={"status": "ok", "messages": django_messages})
+        except User.DoesNotExist:
+            return JsonResponse(data={"statis": "error"})
+    return JsonResponse(data={"status": "error"})

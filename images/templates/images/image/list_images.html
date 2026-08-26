@@ -1,0 +1,16 @@
+{% load thumbnail %}
+
+{% for image in images %}
+  <div class="image">
+    <a href="{{ image.get_absolute_url }}">
+      {% if image.image %}
+        <img src="{% thumbnail image.image 'avatar_preview' %}" alt="{{ image.title }}" />
+      {% else %}
+        <img src="/static/images/no-image.png" alt="No image" />
+      {% endif %}
+    </a>
+    <div class="info">
+      <a href="{{ image.get_absolute_url }}" class="title">{{ image.title }}</a>
+    </div>
+  </div>
+{% endfor %}
