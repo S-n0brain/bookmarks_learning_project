@@ -15,6 +15,7 @@ dependencies = [
     "psycopg[binary]>=3.3.4",
     "pyopenssl>=26.4.0",
     "pytils>=0.4.4",
+    "redis>=8.1.0",
     "requests>=2.34.2",
     "social-auth-app-django>=6.0.1",
 ]

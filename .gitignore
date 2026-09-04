@@ -1,21 +1,50 @@
 # Python-generated files
 __pycache__/
 *.py[oc]
+*.py[cod]
+*$py.class
 build/
 dist/
 wheels/
 *.egg-info
 
-# Virtual environments
-.venv
+# Виртуальное окружение
+.venv/
+env/
+venv/
 
 .env
+.env.*
+
+# SSL сертификаты разработки
+cert.crt
+cert.key
+
+# Базы данных
+*.sqlite3
+*.db
 
 .pylintrc
-db.sqlite3
 # Django stuff:
 *.log
+
+# IDE и ОС
 .vscode/
 .idea/
-media/
+.DS_Store
+Thumbs.db
+
+# Медиафайлы (пользовательский контент)
+media/images/20*
+media/users/20*
+# Исключаем автосгенерированные миниатюры easy-thumbnails
+*.jpg.*
+*.png.*
+# Сохраняем заглушку по умолчанию в репозитории
+!media/images/no-image.jpg
+
+
 products/
+
+# Статика (если делался collectstatic)
+staticfiles/

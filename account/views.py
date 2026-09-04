@@ -8,6 +8,8 @@ from django.views.decorators.http import require_POST
 
 from account.forms import LoginForm, ProfileEditForm, UserEditForm, UserRegistrationForm
 from account.models import Contact, Profile
+from actions.models import Action
+from actions.utils import create_action
 
 
 def user_login(request: HttpRequest):
@@ -32,8 +34,17 @@ def user_login(request: HttpRequest):
 
 
 @login_required
-def dashboard(request):
-    return render(request, "account/dashboard.html", {"section": "dashboard"})
+def dashboard(request: HttpRequest):
+    actions = Action.objects.exclude(user=request.user)
+    following_ids = request.user.following.values_list("id", flat=True)
+    if following_ids:
+        actions = actions.filter(user_id__in=following_ids)
+    actions = actions.select_related("user", "user__profile").prefetch_related("target")
+    return render(
+        request,
+        "account/dashboard.html",
+        {"section": "dashboard", "actions": actions[:10]},
+    )
 
 
 def register(request: HttpRequest):
@@ -43,7 +54,8 @@ def register(request: HttpRequest):
             new_user: User = user_form.save(commit=False)
             new_user.set_password(user_form.cleaned_data["password"])
             new_user.save()
-            Profile.objects.create(user=new_user)
+            # Profile.objects.create(user=new_user)
+            create_action(user=new_user, verb="'has created an account'")
         return render(request, "account/register_done.html", {"new_user": new_user})
     else:
         user_form = UserRegistrationForm()
@@ -104,6 +116,7 @@ def user_follow(request: HttpRequest):
             if action == "follow":
                 Contact.objects.get_or_create(user_from=request.user, user_to=user)
                 messages.success(request, f"You are now following {user.username}!")
+                create_action(request.user, verb="is following", target=user)
             else:
                 Contact.objects.filter(user_from=request.user, user_to=user).delete()
                 messages.success(request, f"You have unfollowed {user.username}.")

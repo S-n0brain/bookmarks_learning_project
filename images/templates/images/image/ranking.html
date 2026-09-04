@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Images Ranking
+{% endblock %}
+
+{% block content %}
+  <h1>Images ranking</h1>
+  <ol>
+    {% for image, views in most_viewed %}
+      <li>
+        <a href="{{ image.get_absolute_url }}">{{ image.title }}</a>: 
+        <span>{{ views|floatformat:0 }} view{{ views|pluralize }}</span>
+      </li>
+    {% empty %}
+      <p>No images have been ranked yet.</p>
+    {% endfor %}
+  </ol>
+{% endblock %}

@@ -47,6 +47,7 @@ dependencies = [
     { name = "psycopg", extra = ["binary"] },
     { name = "pyopenssl" },
     { name = "pytils" },
+    { name = "redis" },
     { name = "requests" },
     { name = "social-auth-app-django" },
 ]
@@ -70,6 +71,7 @@ requires-dist = [
     { name = "psycopg", extras = ["binary"], specifier = ">=3.3.4" },
     { name = "pyopenssl", specifier = ">=26.4.0" },
     { name = "pytils", specifier = ">=0.4.4" },
+    { name = "redis", specifier = ">=8.1.0" },
     { name = "requests", specifier = ">=2.34.2" },
     { name = "social-auth-app-django", specifier = ">=6.0.1" },
 ]
@@ -842,6 +844,15 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/28/c8/e9b179c624ed0ed6f3c0c61ca47556e90e2a484021362bcf1d0dded233b6/pytils-0.4.4.tar.gz", hash = "sha256:9992a96caad57daa211584df1da4fd825f11e836d3ed93011785f1d02ab6f0ca", size = 109208, upload-time = "2025-07-29T07:17:37.92Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/fc/9e/e60c212698a34aa5c694824bc8963dce70bf38894cbede38c06d78471d1a/pytils-0.4.4-py3-none-any.whl", hash = "sha256:e54c16465a5fdb65d414e2da8045e6cc6de79889acda6143dcef2e1e86a1a840", size = 34194, upload-time = "2025-07-29T07:17:36.227Z" },
+]
+
+[[package]]
+name = "redis"
+version = "8.1.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/a8/99/604f0b666d4c616d891cf77ebb9db6bb21601344c051aebf1b72b9ff915f/redis-8.1.0.tar.gz", hash = "sha256:6e1a19beef9225c83efd689c7e6b7da2d5215b1f42cd13b7fc3714d0a09c7b25", size = 5254356, upload-time = "2026-07-30T08:51:00.269Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/66/9d/c5731f6e3608663d4d3656fd8d3aecee8b509c3082818f5a13eae925baea/redis-8.1.0-py3-none-any.whl", hash = "sha256:a4fe1aac3d3b3cc791d4b3d5931c5a956045dc951ee74d1c913ee3ac4d2ee9fb", size = 560618, upload-time = "2026-07-30T08:50:58.497Z" },
 ]
 
 [[package]]

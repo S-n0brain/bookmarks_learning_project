@@ -19,10 +19,14 @@ class Image(models.Model):
     users_like = models.ManyToManyField(
         to=settings.AUTH_USER_MODEL, related_name="images_liked", blank=True
     )
+    total_likes = models.PositiveIntegerField(verbose_name="likes", default=0)
 
     class Meta:
         ordering = ("-created",)
-        indexes = [models.Index(fields=["-created"])]
+        indexes = [
+            models.Index(fields=["-created"]),
+            models.Index(fields=["-total_likes"]),
+        ]
 
     def __str__(self) -> str:
         return self.title

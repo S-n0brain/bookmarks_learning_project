@@ -158,7 +158,7 @@ SOCIAL_AUTH_PIPELINE = (
     "social_core.pipeline.user.get_username",
     "social_core.pipeline.social_auth.associate_by_email",
     "social_core.pipeline.user.create_user",
-    "account.authentication.create_profile",
+    # "account.authentication.create_profile",
     "social_core.pipeline.social_auth.associate_user",
     "social_core.pipeline.social_auth.load_extra_data",
     "social_core.pipeline.user.user_details",
@@ -199,3 +199,7 @@ THUMBNAIL_ALIASES = {
 ABSOLUTE_URL_OVERRIDES = {
     "auth.user": lambda u: reverse_lazy("account:user_detail", args=[u.username])
 }
+
+REDIS_HOST = env("REDIS_HOST")
+REDIS_PORT = env("REDIS_PORT")
+REDIS_DB = env("REDIS_DB")

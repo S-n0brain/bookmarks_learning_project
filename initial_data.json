@@ -1,0 +1,1213 @@
+[
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$beAbICuAizy05wSad8Hvz9$9POYHMi8KN1PFYp1GoTI1rNYs9MoSMdWSa9lT0cWIrw=",
+    "last_login": "2026-09-04T05:19:44.795Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "n0brain",
+    "last_name": "",
+    "email": "koltafvhdgv@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-08-11T15:05:23Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$EhB7bMTSAOF8S1dWctqCbs$u1DlOt0MrQtBCcm/OxUtgVr6Lv9Ig2FkmVoPkbNGgkg=",
+    "last_login": "2026-08-30T11:19:27.398Z",
+    "is_superuser": false,
+    "username": "sergey",
+    "first_name": "Sergey",
+    "last_name": "Pv",
+    "email": "pv@mail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-08-30T10:12:51Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "images.image",
+  "pk": 11,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "title": "Шикимори — энциклопедия аниме и манги",
+    "slug": "shikimori---entsiklopediya-anime-i-mangi",
+    "url": "https://shikimori.io/system/user_images_h/preview/6dd71336621391d70c688993/f8b750cecd932e27e72c2ae0f61d8f95f43e54b8b83284ba71c6bae694afa74f.jpg",
+    "image": "images/2026/08/18/.jpg_Mufx8iw",
+    "description": "qwerty",
+    "created": "2026-08-18T12:49:54.076Z",
+    "total_likes": 1,
+    "users_like": [
+      [
+        "admin"
+      ]
+    ]
+  }
+},
+{
+  "model": "images.image",
+  "pk": 12,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "title": "Шики2",
+    "slug": "shiki2",
+    "url": "https://shikimori.io/system/user_images_h/preview/598a28d03f9c0574dc6048d1/42f6abe16b508b3eb643dcbd28564391895629145945a16031e4d34e6414a538.jpg",
+    "image": "images/2026/08/24/2.jpg",
+    "description": "Картинка с шикимори",
+    "created": "2026-08-24T07:38:34.334Z",
+    "total_likes": 0,
+    "users_like": []
+  }
+},
+{
+  "model": "images.image",
+  "pk": 13,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "title": "Twitch",
+    "slug": "twitch",
+    "url": "https://static-cdn.jtvnw.net/previews-ttv/live_user_yariksupra-640x360.jpg",
+    "image": "images/2026/08/24/twitch.jpg",
+    "description": "",
+    "created": "2026-08-24T07:42:55.973Z",
+    "total_likes": 0,
+    "users_like": []
+  }
+},
+{
+  "model": "images.image",
+  "pk": 14,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "title": "Twitch2",
+    "slug": "twitch2",
+    "url": "https://static-cdn.jtvnw.net/previews-ttv/live_user_markl1nck-640x360.jpg",
+    "image": "images/2026/08/24/twitch2.jpg",
+    "description": "",
+    "created": "2026-08-24T07:43:12.491Z",
+    "total_likes": 0,
+    "users_like": []
+  }
+},
+{
+  "model": "images.image",
+  "pk": 15,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "title": "Twitch3",
+    "slug": "twitch3",
+    "url": "https://static-cdn.jtvnw.net/previews-ttv/live_user_markl1nck-640x360.jpg",
+    "image": "images/2026/08/24/twitch3.jpg",
+    "description": "",
+    "created": "2026-08-24T07:58:17.197Z",
+    "total_likes": 1,
+    "users_like": [
+      [
+        "admin"
+      ]
+    ]
+  }
+},
+{
+  "model": "images.image",
+  "pk": 16,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "title": "Twitch4",
+    "slug": "twitch4",
+    "url": "https://static-cdn.jtvnw.net/previews-ttv/live_user_eternalxsadness-640x360.jpg",
+    "image": "images/2026/08/24/twitch4.jpg",
+    "description": "",
+    "created": "2026-08-24T07:58:27.680Z",
+    "total_likes": 0,
+    "users_like": []
+  }
+},
+{
+  "model": "images.image",
+  "pk": 17,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "title": "Twitch5",
+    "slug": "twitch5",
+    "url": "https://static-cdn.jtvnw.net/previews-ttv/live_user_m3wsu-640x360.jpg",
+    "image": "images/2026/08/24/twitch5.jpg",
+    "description": "",
+    "created": "2026-08-24T07:58:37.972Z",
+    "total_likes": 0,
+    "users_like": []
+  }
+},
+{
+  "model": "images.image",
+  "pk": 18,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "title": "Twitch6",
+    "slug": "twitch6",
+    "url": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chocokokko_-640x360.jpg",
+    "image": "images/2026/08/24/twitch6.jpg",
+    "description": "",
+    "created": "2026-08-24T07:58:48.718Z",
+    "total_likes": 0,
+    "users_like": []
+  }
+},
+{
+  "model": "images.image",
+  "pk": 19,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "title": "Twitch7",
+    "slug": "twitch7",
+    "url": "https://static-cdn.jtvnw.net/previews-ttv/live_user_keliencs-640x360.jpg",
+    "image": "images/2026/08/24/twitch7.jpg",
+    "description": "",
+    "created": "2026-08-24T07:59:05.927Z",
+    "total_likes": 1,
+    "users_like": [
+      [
+        "sergey"
+      ]
+    ]
+  }
+},
+{
+  "model": "images.image",
+  "pk": 20,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "title": "кс",
+    "slug": "ks",
+    "url": "https://static-cdn.jtvnw.net/ttv-boxart/32399-285x380.jpg",
+    "image": "images/2026/08/24/.jpg",
+    "description": "",
+    "created": "2026-08-24T07:59:31.103Z",
+    "total_likes": 1,
+    "users_like": [
+      [
+        "sergey"
+      ]
+    ]
+  }
+},
+{
+  "model": "images.image",
+  "pk": 21,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "title": "пабг",
+    "slug": "pabg",
+    "url": "https://static-cdn.jtvnw.net/ttv-boxart/493057-285x380.jpg",
+    "image": "images/2026/08/24/.jpg_pFdTVZf",
+    "description": "",
+    "created": "2026-08-24T07:59:51.724Z",
+    "total_likes": 0,
+    "users_like": []
+  }
+},
+{
+  "model": "images.image",
+  "pk": 22,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "title": "tlou",
+    "slug": "tlou",
+    "url": "https://static-cdn.jtvnw.net/ttv-boxart/778386489_IGDB-285x380.jpg",
+    "image": "images/2026/08/24/tlou.jpg",
+    "description": "",
+    "created": "2026-08-24T08:00:43.833Z",
+    "total_likes": 2,
+    "users_like": [
+      [
+        "admin"
+      ],
+      [
+        "sergey"
+      ]
+    ]
+  }
+},
+{
+  "model": "images.image",
+  "pk": 23,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "title": "irl",
+    "slug": "irl",
+    "url": "https://static-cdn.jtvnw.net/ttv-boxart/509672-285x380.jpg",
+    "image": "images/2026/08/24/irl.jpg",
+    "description": "",
+    "created": "2026-08-24T08:01:12.998Z",
+    "total_likes": 2,
+    "users_like": [
+      [
+        "admin"
+      ],
+      [
+        "sergey"
+      ]
+    ]
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 1,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/18/.jpg_Mufx8iw",
+    "modified": "2026-08-24T07:36:59.928Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 2,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/24/2.jpg",
+    "modified": "2026-08-24T07:38:34.400Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 3,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/24/twitch.jpg",
+    "modified": "2026-08-24T07:42:56.039Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 4,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/24/twitch2.jpg",
+    "modified": "2026-08-24T07:43:12.556Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 5,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/24/twitch3.jpg",
+    "modified": "2026-08-24T07:58:17.411Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 6,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/24/twitch4.jpg",
+    "modified": "2026-08-24T07:58:27.747Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 7,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/24/twitch5.jpg",
+    "modified": "2026-08-24T07:58:38.037Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 8,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/24/twitch6.jpg",
+    "modified": "2026-08-24T07:58:48.784Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 9,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/24/twitch7.jpg",
+    "modified": "2026-08-30T11:29:00.516Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 10,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/24/.jpg",
+    "modified": "2026-08-30T11:29:00.489Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 11,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/24/.jpg_pFdTVZf",
+    "modified": "2026-08-24T07:59:51.781Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 12,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/24/tlou.jpg",
+    "modified": "2026-08-30T11:29:00.530Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 13,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/24/irl.jpg",
+    "modified": "2026-08-30T11:29:00.547Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 14,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "users/2026/08/11/ChatGPT_Image_12_авг._2026_г._00_08_21.png",
+    "modified": "2026-08-26T04:24:57.199Z"
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 1,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/18/.jpg_Mufx8iw.300x0_q100.jpg",
+    "modified": "2026-08-18T13:47:50.667Z",
+    "source": 1
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 2,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/18/.jpg_Mufx8iw.300x0_q100_crop.jpg",
+    "modified": "2026-08-18T13:53:55.233Z",
+    "source": 1
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 3,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/18/.jpg_Mufx8iw.300x0_q100_crop-smart.jpg",
+    "modified": "2026-08-18T13:56:36.284Z",
+    "source": 1
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 4,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/18/.jpg_Mufx8iw.100x0_q100_crop-smart.jpg",
+    "modified": "2026-08-18T13:56:46.898Z",
+    "source": 1
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 5,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/18/.jpg_Mufx8iw.200x0_q100_crop-smart.jpg",
+    "modified": "2026-08-18T13:56:53.510Z",
+    "source": 1
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 6,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/18/.jpg_Mufx8iw.200x0_q10_crop-smart.jpg",
+    "modified": "2026-08-18T13:57:56.803Z",
+    "source": 1
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 7,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/18/.jpg_Mufx8iw.300x0_q10_crop-smart.jpg",
+    "modified": "2026-08-18T13:58:06.513Z",
+    "source": 1
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 8,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/18/.jpg_Mufx8iw.300x0_q1_crop-smart.jpg",
+    "modified": "2026-08-18T13:58:13.746Z",
+    "source": 1
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 9,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/18/.jpg_Mufx8iw.300x0_q10_crop-smart_sharpen.jpg",
+    "modified": "2026-08-18T13:58:44.526Z",
+    "source": 1
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 10,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/18/.jpg_Mufx8iw.300x0_q100_crop-smart_sharpen.jpg",
+    "modified": "2026-08-18T13:58:53.801Z",
+    "source": 1
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 11,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/18/.jpg_Mufx8iw.100x0_q100_crop-smart_sharpen.jpg",
+    "modified": "2026-08-18T14:06:33.226Z",
+    "source": 1
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 12,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/18/.jpg_Mufx8iw.300x0_q1_crop-smart_sharpen.jpg",
+    "modified": "2026-08-18T14:06:43.871Z",
+    "source": 1
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 13,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/18/.jpg_Mufx8iw.300x0_q80_crop-smart_sharpen.jpg",
+    "modified": "2026-08-18T14:07:35.886Z",
+    "source": 1
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 14,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/18/.jpg_Mufx8iw.300x0_q90_crop-smart_sharpen.jpg",
+    "modified": "2026-08-24T07:36:59.939Z",
+    "source": 1
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 15,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/18/.jpg_Mufx8iw.300x300_q85_crop-smart.jpg",
+    "modified": "2026-08-23T14:13:25.270Z",
+    "source": 1
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 16,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/24/2.jpg.300x0_q90_crop-smart_sharpen.jpg",
+    "modified": "2026-08-24T07:38:34.409Z",
+    "source": 2
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 17,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/24/twitch.jpg.300x0_q90_crop-smart_sharpen.jpg",
+    "modified": "2026-08-24T07:42:56.049Z",
+    "source": 3
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 18,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/24/twitch2.jpg.300x0_q90_crop-smart_sharpen.jpg",
+    "modified": "2026-08-24T07:43:12.564Z",
+    "source": 4
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 19,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/24/twitch3.jpg.300x0_q90_crop-smart_sharpen.jpg",
+    "modified": "2026-08-24T07:58:17.424Z",
+    "source": 5
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 20,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/24/twitch4.jpg.300x0_q90_crop-smart_sharpen.jpg",
+    "modified": "2026-08-24T07:58:27.757Z",
+    "source": 6
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 21,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/24/twitch5.jpg.300x0_q90_crop-smart_sharpen.jpg",
+    "modified": "2026-08-24T07:58:38.051Z",
+    "source": 7
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 22,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/24/twitch6.jpg.300x0_q90_crop-smart_sharpen.jpg",
+    "modified": "2026-08-24T07:58:48.794Z",
+    "source": 8
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 23,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/24/twitch7.jpg.300x0_q90_crop-smart_sharpen.jpg",
+    "modified": "2026-08-24T07:59:06.024Z",
+    "source": 9
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 24,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/24/.jpg.300x0_q90_crop-smart_sharpen.jpg",
+    "modified": "2026-08-24T07:59:31.179Z",
+    "source": 10
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 25,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/24/.jpg_pFdTVZf.300x0_q90_crop-smart_sharpen.jpg",
+    "modified": "2026-08-24T07:59:51.790Z",
+    "source": 11
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 26,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/24/tlou.jpg.300x0_q90_crop-smart_sharpen.jpg",
+    "modified": "2026-08-24T08:00:43.901Z",
+    "source": 12
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 27,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/24/irl.jpg.300x0_q90_crop-smart_sharpen.jpg",
+    "modified": "2026-08-24T08:01:13.074Z",
+    "source": 13
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 28,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "users/2026/08/11/ChatGPT_Image_12_авг._2026_г._00_08_21.png.100x100_q100_sharpen.jpg",
+    "modified": "2026-08-26T04:24:57.221Z",
+    "source": 14
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 29,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/24/.jpg.80x80_q85_crop-100%.jpg",
+    "modified": "2026-08-30T11:29:00.500Z",
+    "source": 10
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 30,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/24/twitch7.jpg.80x80_q85_crop-100%.jpg",
+    "modified": "2026-08-30T11:29:00.521Z",
+    "source": 9
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 31,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/24/tlou.jpg.80x80_q85_crop-100%.jpg",
+    "modified": "2026-08-30T11:29:00.537Z",
+    "source": 12
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 32,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "images/2026/08/24/irl.jpg.80x80_q85_crop-100%.jpg",
+    "modified": "2026-08-30T11:29:00.553Z",
+    "source": 13
+  }
+},
+{
+  "model": "actions.action",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "sergey"
+    ],
+    "verb": "is following",
+    "created": "2026-08-30T11:19:35.985Z",
+    "target_ct": [
+      "auth",
+      "user"
+    ],
+    "target_id": 1
+  }
+},
+{
+  "model": "actions.action",
+  "pk": 2,
+  "fields": {
+    "user": [
+      "sergey"
+    ],
+    "verb": "likes",
+    "created": "2026-08-30T11:19:42.434Z",
+    "target_ct": [
+      "images",
+      "image"
+    ],
+    "target_id": 23
+  }
+},
+{
+  "model": "actions.action",
+  "pk": 3,
+  "fields": {
+    "user": [
+      "sergey"
+    ],
+    "verb": "likes",
+    "created": "2026-08-30T11:19:45.165Z",
+    "target_ct": [
+      "images",
+      "image"
+    ],
+    "target_id": 22
+  }
+},
+{
+  "model": "actions.action",
+  "pk": 4,
+  "fields": {
+    "user": [
+      "sergey"
+    ],
+    "verb": "likes",
+    "created": "2026-08-30T11:19:47.415Z",
+    "target_ct": [
+      "images",
+      "image"
+    ],
+    "target_id": 19
+  }
+},
+{
+  "model": "actions.action",
+  "pk": 5,
+  "fields": {
+    "user": [
+      "sergey"
+    ],
+    "verb": "likes",
+    "created": "2026-08-30T11:19:51.363Z",
+    "target_ct": [
+      "images",
+      "image"
+    ],
+    "target_id": 20
+  }
+},
+{
+  "model": "actions.action",
+  "pk": 6,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "verb": "likes",
+    "created": "2026-08-30T11:20:09.921Z",
+    "target_ct": [
+      "images",
+      "image"
+    ],
+    "target_id": 22
+  }
+},
+{
+  "model": "actions.action",
+  "pk": 7,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "verb": "is following",
+    "created": "2026-08-30T11:28:57.547Z",
+    "target_ct": [
+      "auth",
+      "user"
+    ],
+    "target_id": 2
+  }
+},
+{
+  "model": "actions.action",
+  "pk": 8,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "verb": "likes",
+    "created": "2026-08-30T13:19:54.696Z",
+    "target_ct": [
+      "images",
+      "image"
+    ],
+    "target_id": 23
+  }
+},
+{
+  "model": "actions.action",
+  "pk": 9,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "verb": "likes",
+    "created": "2026-08-30T13:22:16.069Z",
+    "target_ct": [
+      "images",
+      "image"
+    ],
+    "target_id": 23
+  }
+},
+{
+  "model": "actions.action",
+  "pk": 10,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "verb": "likes",
+    "created": "2026-09-04T05:25:39.588Z",
+    "target_ct": [
+      "images",
+      "image"
+    ],
+    "target_id": 15
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2026-08-11T15:05:51.376Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "1",
+    "object_repr": "admin",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2026-08-11T15:08:38.781Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "account",
+      "profile"
+    ],
+    "object_id": "1",
+    "object_repr": "Profile for admin",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2026-08-15T20:25:48.460Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "1",
+    "object_repr": "admin",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Email address\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2026-08-18T12:40:17.821Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "images",
+      "image"
+    ],
+    "object_id": "9",
+    "object_repr": "Лента новостей",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2026-08-18T12:40:17.821Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "images",
+      "image"
+    ],
+    "object_id": "8",
+    "object_repr": "Лента новостей",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2026-08-18T12:40:17.821Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "images",
+      "image"
+    ],
+    "object_id": "7",
+    "object_repr": "Лента новостей",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2026-08-18T12:40:17.821Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "images",
+      "image"
+    ],
+    "object_id": "6",
+    "object_repr": "Лента новостей",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2026-08-18T12:40:17.821Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "images",
+      "image"
+    ],
+    "object_id": "5",
+    "object_repr": "Лента новостей",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2026-08-18T12:40:17.821Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "images",
+      "image"
+    ],
+    "object_id": "4",
+    "object_repr": "Лента новостей",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2026-08-18T12:40:17.821Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "images",
+      "image"
+    ],
+    "object_id": "3",
+    "object_repr": "Лента новостей",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2026-08-18T12:40:17.821Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "images",
+      "image"
+    ],
+    "object_id": "2",
+    "object_repr": "Django and Duke",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2026-08-18T12:49:45.753Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "images",
+      "image"
+    ],
+    "object_id": "10",
+    "object_repr": "Шикимори — энциклопедия аниме и манги",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2026-08-24T07:35:51.418Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "images",
+      "image"
+    ],
+    "object_id": "1",
+    "object_repr": "Django and Duke",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2026-08-30T10:12:51.282Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "2",
+    "object_repr": "sergey",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2026-08-30T10:13:47.002Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "2",
+    "object_repr": "sergey",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\", \"Staff status\"]}}]"
+  }
+},
+{
+  "model": "account.contact",
+  "pk": 22,
+  "fields": {
+    "user_from": [
+      "admin"
+    ],
+    "user_to": [
+      "admin"
+    ],
+    "created": "2026-08-26T14:27:01.029Z"
+  }
+},
+{
+  "model": "account.contact",
+  "pk": 23,
+  "fields": {
+    "user_from": [
+      "sergey"
+    ],
+    "user_to": [
+      "admin"
+    ],
+    "created": "2026-08-30T11:19:35.970Z"
+  }
+},
+{
+  "model": "account.contact",
+  "pk": 24,
+  "fields": {
+    "user_from": [
+      "admin"
+    ],
+    "user_to": [
+      "sergey"
+    ],
+    "created": "2026-08-30T11:28:57.539Z"
+  }
+},
+{
+  "model": "account.profile",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "date_of_birth": "2000-03-22",
+    "photo": "users/2026/08/11/ChatGPT_Image_12_авг._2026_г._00_08_21.png"
+  }
+}
+]
